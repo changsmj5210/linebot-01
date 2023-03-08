@@ -38,11 +38,13 @@ async function handleEvent(event) {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
+/*
 async function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
+*/
 
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
@@ -57,11 +59,11 @@ async function handleEvent(event) {
   return client.replyMessage(event.replyToken, echo);
 }
 
-
+/*
   // use reply API
   return client.replyMessage(event.replyToken, echo);
 }
-
+*/
 
 // listen on port
 const port = process.env.PORT || 3000;

@@ -38,7 +38,6 @@ async function handleEvent(event) {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
-
 async function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {
     // ignore non-text-message event

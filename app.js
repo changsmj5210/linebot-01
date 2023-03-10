@@ -62,7 +62,7 @@ async function handleEvent(event) {
         content: event.message.text,
       }
     ],
-    max_tokens: 500,
+    max_tokens: 1000,
   });
 
   // create a echoing text message
